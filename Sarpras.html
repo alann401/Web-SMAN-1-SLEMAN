@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fasilities</title>
+
+	<style>
+		nav{
+			width: 100%;
+			margin: 0;
+			background-color: #D2691E;
+		}
+		nav ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+
+		}
+		nav ul li{
+			padding: 10px 30px;
+		}
+		nav ul li a{
+			position: relative;
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			transition: color 0.3s;
+		}
+		nav ul li a::before{
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+			background: #222;
+			z-index: -1;
+			transform: scaleY(0);
+			transform-origin: bottom;
+			transition: transform 0.3s ease;
+		}
+		nav ul li a::after{
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -4px;
+			height: 2px;
+			width: 100%;
+			background: #222;
+			transform: scaleY(0);
+			transform-origin: right;
+			transition: transform 0.3s ease;
+		}
+		nav ul li a:hover::before{
+			transform: scaleY(1);
+		}
+		nav ul li a:hover::after{
+			transform: scaleX(1);
+		}
+		nav ul li a:hover{
+			color: gold;
+			font-family: arial;
+		}
+		body{
+			font-family: sans-serif;
+			background-color:#f4f4f4;
+			line-height: 30px;
+			background-size: cover;
+			font-size: 20px;
+			padding-left: 10px;
+			margin: 10px;
+
+		
+
+			
+		}
+		#header {
+			background-image: url('SMA2.jpg');
+    		background-size: auto;
+    		background-position: center;
+			color:black;
+			font-weight: bold;
+			text-align: left;
+			padding:135px;
+			margin-top: 20px;
+			}
+
+		#content {
+			padding:20px;
+		}
+		.section {
+			padding: 10px;
+			margin-bottom: 20px;
+			text-align: left;
+			h2{
+				color:#D2691E;
+			}
+		}
+		#motto {
+			background-color:#C75F0A;
+			text-align: center;
+			padding: 15px;
+			font-weight: bolder;
+			border-radius: 5px;
+			color: white;
+		#image{
+			box-shadow: 1px 1px 20px #FFA500;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="header">
+</div>
+<div id="content">
+	<div class="section">
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="berita.html">News</a></li>
+		<li><a href="sejarah.html">school history</a></li>
+		<li><a href="Sarpras.html">Fasilities</a></li> 
+		<li><a href="Data.html">student data</a></li>
+	</ul>
+</nav>
+
+		<h2>Sarana dan Prasarana</h2>
+
+<p>Ruang Kelas: X, XI, dan XII MIPA & IPS</p>
+
+<p>Ruang Guru & Kepala Sekolah</p>
+
+<p>Laboratorium: Bahasa, Fisika, Kimia, Biologi, dan Komputer</p>
+
+<p>Ruang Ibadah: Masjid, ruang agama Katolik dan Kristen</p>
+
+<p>Ruang Kesenian dan Musik</p>
+
+<p>Toilet/WC: Terpisah untuk guru, siswa laki-laki, siswa perempuan, dan tamu</p>
+
+<p>Ruang UKS, Perpustakaan, Bimbingan Konseling</p>
+
+<p>Kamar mandi, gudang, koperasi, tempat parkir, dan taman</p>
+
+<p>Aula, lapangan, dan fasilitas olahraga</p>
+
+	<div id="motto">
+		<p3>Motto Sekolah: “Berprestasi, Berkarakter, dan Berbudaya”</p3>
+	</div>
+
+</body>
+</html>

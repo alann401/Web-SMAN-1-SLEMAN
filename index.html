@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo HTML div tag</title>
+
+	<style>
+		nav{
+			width: 100%;
+			margin: 0;
+			background-color: #D2691E;
+		}
+		nav ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+
+		}
+		nav ul li{
+			padding: 10px 30px;
+		}
+		nav ul li a{
+			position: relative;
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			transition: color 0.3s;
+		}
+		nav ul li a::before{
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+			background: #222;
+			z-index: -1;
+			transform: scaleY(0);
+			transform-origin: bottom;
+			transition: transform 0.3s ease;
+		}
+		nav ul li a::after{
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -4px;
+			height: 2px;
+			width: 100%;
+			background: #222;
+			transform: scaleY(0);
+			transform-origin: right;
+			transition: transform 0.3s ease;
+		}
+		nav ul li a:hover::before{
+			transform: scaleY(1);
+		}
+		nav ul li a:hover::after{
+			transform: scaleX(1);
+		}
+		nav ul li a:hover{
+			color: gold;
+			font-family: arial;
+		}
+		body{
+			font-family: Arial;
+			background-color:#f4f4f4;
+			line-height: 20px;
+			background-image: url(Gambar5.jpg);
+			background-size: cover;
+		
+
+			
+		}
+		#header {
+			background-image: url('SMA2.jpg');
+    		background-size: auto;
+    		background-position: center;
+			color:black;
+			font-weight: bold;
+			text-align: left;
+			padding:135px;
+			margin-top: 20px;
+			}
+
+		#content {
+			padding:20px;
+		}
+		.section {
+			padding: 10px;
+			margin-bottom: 20px;
+			text-align: left;
+			h2{
+				color:#0b5ed7;
+			}
+		}
+		#motto {
+			background-color:#C75F0A;
+			text-align: center;
+			padding: 15px;
+			font-weight: bolder;
+			border-radius: 5px;
+			color: white;
+		
+
+	</style>
+</head>
+<body>
+	<div id="header">
+</div>
+<div id="content">
+	<div class="section">
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="berita.html">News</a></li>
+		<li><a href="sejarah.html">school history</a></li>
+		<li><a href="Sarpras.html">Fasilities</a></li> 
+		<li><a href="Data.html">student data</a></li>
+	</ul>
+</nav>
+		<h2>Selamat Datang</h2>
+		<p>SMA Negeri 1 Sleman merupakan salah satu satuan pendidikan menengah atas yang berkomitmen untuk memberikan layanan pendidikan yang berkualitas, berkarakter, dan berdaya saing. Berlokasi di Kabupaten Sleman, Daerah Istimewa Yogyakarta, sekolah ini terus berupaya menciptakan lingkungan belajar yang aman, nyaman, dan inspiratif.</p>
+		<p>Melalui pembelajaran yang inovatif serta berbagai kegiatan akademik dan nonakademik, SMA Negeri 1 Sleman berfokus pada pengembangan potensi peserta didik secara optimal agar siap menghadapi tantangan masa depan tanpa meninggalkan nilai-nilai budaya dan karakter bangsa.</p>
+
+		<h2>Visi Sekolah</h2>
+		<p>“Terwujudnya peserta didik yang beriman dan bertakwa, berprestasi, berkarakter, serta mampu bersaing di era global.”</p>
+
+		<h2>Misi Sekolah</h2>
+		<ul>
+			<li>Menyelenggarakan proses pembelajaran yang efektif, inovatif, dan berpusat pada peserta didik.</li>
+			<li>Mengembangkan potensi akademik dan nonakademik siswa secara optimal.</li>
+			<li>Menanamkan nilai keimanan, ketakwaan, dan karakter Pancasila.</li>
+			<li>Mendorong pemanfaatan teknologi informasi secara bijak dan bertanggung jawab.</li>
+			<li>Mewujudkan lingkungan sekolah yang disiplin, aman, dan berbudaya.</li>
+		</ul>
+	</div>
+
+	<div id="motto">
+		<p3>Motto Sekolah: “Berprestasi, Berkarakter, dan Berbudaya”</p3>
+	</div>
+
+</body>
+</html>
